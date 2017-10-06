@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品アンケートのサンプル</title>
+
+    <!--jQuery-->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!--Semantic-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+
+    <!--Custom Style-->
+    <link rel="stylesheet" href="css/surveyStyle.css">
+
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+
+</head>
+<body>
+<div class="ui container">
+    <div class="main-container">
+        <div class="left-container">
+            <h2 id="show-counter">商品アンケートのサンプル</h2>
+            <p id="show-data">
+
+商品を購入したお客様に対する満足度アンケートの例です。<br>
+クエスタントは14カテゴリ（食品、飲料、お酒、たばこ、ファッション、日用品、自動車、バイク、自転車、医薬品、化粧品、家電、ゲーム、ソフトウェア）の商品アンケートテンプレートを用意しています。<br>
+
+商品を何から知ったか聞くことによって、どのような広告が印象に残っているか効果検証できたり、<br>
+商品を購入した理由を聞くことで、広告でどのようなことを訴求すればよいか、知ることができます。<br>
+
+また、継続的に満足度を聞くことで、商品の健康状態を常に把握できることに加え、<br>
+ご意見やご要望を自由に入力してもらうことで、商品の改善ポイントを発見できます。<br>
+
+アンケートのURLはQRコードに変換できるので、紙に印刷して商品を購入したお客様に渡したり、<br>
+継続して商品を購入しているお客様に対して、メールにアンケートURLを記載したりして意見を集められます。</p>
+        </div>
+
+        <div class="right-container">
+            <button class="ui button survey-button" id="answer1">Q1. あなたは、<span>{商品名}</span>を何から見聞きして知りましたか。</button>
+            <button class="ui button survey-button" id="answer2" >Q2. 今回、<span>{商品名}</span>をどこで購入しましたか。</button>
+            <button class="ui button survey-button" id="answer3">Q3. <span>{商品名}</span>を購入した理由をすべてお知らせください。</button>
+            <button class="ui button survey-button" id="answer4">Q4. <span>{商品名}</span>に対して、総合的にどのくらい満足していますか。</button>
+            <button class="ui button survey-button" id="answer5">Q5. <span>{商品名}</span>に対して前問のように回答した理由をお書きください。</button>
+            <button class="ui button survey-button" id="answer6">Q6. <span>{商品名}</span>の以下の点に対して、どのくらい満足していますか。それぞれお知らせください。</button>
+            <button class="ui button survey-button" id="answer7">Q7. <span>{商品名}</span>に対してご意見・ご要望がございましたら、ご自由にお書きください。</button>
+            
+        </div>
+    </div>
+    <br>
+    <div class="navigation-controllers">
+        <button class="ui icon button left-arrow" id="prev-data">
+            <i class="ui icon arrow left"></i>
+        </button>
+        <button class="ui icon button right-arrow" disabled id="next-data">
+            <i class="ui icon arrow right"></i>
+        </button>
+        <button class="ui icon button" disabled id="review-data">
+            Review Data
+        </button>
+
+    </div>
+</div>
+</body>
+</html>
